@@ -1,0 +1,39 @@
+{
+  "summary": "A real-time chat application where users can send and receive messages instantly.",
+  "features": [
+    "User authentication",
+    "Send messages",
+    "Receive messages",
+    "Online status"
+  ],
+  "tasks": {
+    "frontend": [
+      "Build chat UI",
+      "Show message list",
+      "Handle typing UI"
+    ],
+    "backend": [
+      "Setup WebSocket",
+      "Store messages",
+      "Manage users"
+    ]
+  },
+  "apis": [
+    {
+      "method": "POST",
+      "endpoint": "/api/message",
+      "description": "Send message"
+    }
+  ],
+  "database": [
+    {
+      "table": "messages",
+      "fields": ["id", "sender", "receiver", "message"]
+    }
+  ],
+  "questions": [
+    "Do we need group chats?",
+    "Should messages be encrypted?",
+    "Typing indicators required?"
+  ]
+}

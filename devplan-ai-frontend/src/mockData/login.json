@@ -1,0 +1,46 @@
+{
+  "summary": "A secure authentication system allowing users to register, login, and reset passwords.",
+  "features": [
+    "User registration",
+    "Login with email and password",
+    "Forgot password",
+    "Reset password via email"
+  ],
+  "tasks": {
+    "frontend": [
+      "Create login form UI",
+      "Create signup form UI",
+      "Add form validation",
+      "Connect APIs"
+    ],
+    "backend": [
+      "Create authentication APIs",
+      "Implement JWT tokens",
+      "Hash passwords",
+      "Setup email service"
+    ]
+  },
+  "apis": [
+    {
+      "method": "POST",
+      "endpoint": "/api/login",
+      "description": "Login user"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/register",
+      "description": "Register user"
+    }
+  ],
+  "database": [
+    {
+      "table": "users",
+      "fields": ["id", "email", "password", "createdAt"]
+    }
+  ],
+  "questions": [
+    "Should we support social login?",
+    "Do we need OTP verification?",
+    "Password strength rules?"
+  ]
+}

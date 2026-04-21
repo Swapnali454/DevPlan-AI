@@ -1,0 +1,48 @@
+{
+  "summary": "An e-commerce platform where users can browse products, add to cart, and place orders.",
+  "features": [
+    "Product listing",
+    "Add to cart",
+    "Checkout",
+    "Order tracking"
+  ],
+  "tasks": {
+    "frontend": [
+      "Build product listing UI",
+      "Create cart page",
+      "Add checkout flow"
+    ],
+    "backend": [
+      "Create product APIs",
+      "Handle cart logic",
+      "Implement order system"
+    ]
+  },
+  "apis": [
+    {
+      "method": "GET",
+      "endpoint": "/api/products",
+      "description": "Fetch products"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/order",
+      "description": "Place order"
+    }
+  ],
+  "database": [
+    {
+      "table": "products",
+      "fields": ["id", "name", "price"]
+    },
+    {
+      "table": "orders",
+      "fields": ["id", "userId", "status"]
+    }
+  ],
+  "questions": [
+    "What payment gateway to use?",
+    "Do we need discounts?",
+    "Inventory management required?"
+  ]
+}
